@@ -36,10 +36,4 @@ var Ctrl = function(_blob, _light, _pbr, _audio){
     // dat.GUI.toggleHide();
 };
 
-Ctrl.prototype.update_params = function(){
-	var _p = this.params;
-	
-	this.blob.debug_shadow_map(_p.debug_shadow_map);
-	this.audio.set_gain(this.params.audio_gain);
-	this.light.set_light_pos( new THREE.Vector3(_p.light_posx, _p.light_posy, _p.light_posz) );
-};
+
