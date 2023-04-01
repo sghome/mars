@@ -1,10 +1,5 @@
 body{
-  min-width: 1024px;
-  overflow: hidden;
-  margin: 0px;
-  padding: 0px;
-  background: #000;
-  font-family: Helvetica, arial, sans-serif;
+
 }   
 canvas{
   position: fixed;
