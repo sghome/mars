@@ -9,9 +9,6 @@
         <script type="text/javascript" src="js/three.min.js"></script>
         <script type="text/javascript" src="js/dat.gui.min.js"></script>
         <!--tools-->
-        
-      
-        
         <script type="text/javascript" src="js/AudioAnalyzer.js"></script>
         <script type="text/javascript" src="js/ThreeSharedRenderer.js"></script>
         <script type="text/javascript" src="js/ThreePBR.js"></script>
@@ -28,38 +25,33 @@
         <!--main-->
         <script type="text/javascript" src="js/script.js"></script>
         
-         
+         <script>
+        function PlayAudio() {
+          var audio = document.getElementById("music");
+          audio.play();
+          audio.onended = function() {
+            audio.play();
+          };
+        }
+        
+
+        </script>
         
     </head>
-    <body class="demo-1 cda-noimg cda-naked cda-alignright">
+    <body onload="PlayAudio()">
     
-    
-    
-  
-
-
-      <div class="overlay">
-  <img src="m.png">
-</div>
-
-
-
-
-
-
-
+     <div class="overlay">
+        <img src="marte.png">
+     </div>
     
      <div class="layer">
         <canvas>
-    
+          <audio id="music" loop>
+            <source src="music.mp3" type="audio/mpeg"> 
+          </audio>
         </canvas>
-        </div>
-        
-       
-        
- 
-<audio id="music" src="music.mp3"></audio>
-           
+     </div>
       
     </body>
 </html>
+
