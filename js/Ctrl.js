@@ -2,7 +2,6 @@
 
 var Ctrl = function(_blob, _light, _pbr, _audio){
 	
-	
 	this.params = {
 		show_hdr: true,
 		debug_shadow_map: false,
@@ -15,6 +14,7 @@ var Ctrl = function(_blob, _light, _pbr, _audio){
 	
 	// var _g_blob = new dat.GUI();
 	var _g_scene = new dat.GUI();
+	dat.GUI.toggleHide();
 
 	this.blob = _blob;
 	this.light = _light;
