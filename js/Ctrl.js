@@ -1,6 +1,6 @@
 // need datgui lib & threejs lib
 
-var Ctrl = function(){
+var Ctrl = function(_blob, _light, _pbr, _audio){
 	
 	
 	this.params = {
