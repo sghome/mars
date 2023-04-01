@@ -2,8 +2,7 @@
 
 var Ctrl = function(_blob, _light, _pbr, _audio){
 	
-	autoplace: false, 
-      width: 350,
+          width: 350,
           height: 9 * 32 - 1
 	
 	
