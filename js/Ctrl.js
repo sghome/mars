@@ -1,12 +1,20 @@
 // need datgui lib & threejs lib
 
 var Ctrl = function(_blob, _light, _pbr, _audio){
+	
+	autoplace: false, 
+      width: 350,
+          height: 9 * 32 - 1
+	
+	
 	this.params = {
 		show_hdr: true,
 		debug_shadow_map: false,
 		cam_ziggle: true,
 		light_ziggle: true,
 		audio_gain: 70.
+		
+		
 	}
 	
 	// var _g_blob = new dat.GUI();
