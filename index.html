@@ -24,20 +24,50 @@
         <script type="text/javascript" src="js/Ctrl.js"></script>
         <!--main-->
         <script type="text/javascript" src="js/script.js"></script>
+        
+         <script>
+        function PlayAudio() {
+          document.getElementById("music").play();
+        }
+        
+
+        </script>
+        
     </head>
-    <body>
+    <body onclick="PlayAudio">
     
     
+    
+  
+
+
       <div class="overlay">
-  <img src="m.png">
+  <img src="marte.png">
 </div>
+
+
+
+
+
 
 
     
      <div class="layer">
-        <canvas></canvas>
+        <canvas>
+        
+                  <audio id="music" loop>
+<source src="audio/hr.mp3" type="audio/mpeg"> 
+</audio>
+     
+
+        </canvas>
         </div>
         
+       
         
+ 
+
+           
+      
     </body>
 </html>
