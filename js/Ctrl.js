@@ -2,10 +2,10 @@
 
 var Ctrl = function(_blob, _light, _pbr, _audio){
 	this.params = {
-		show_hdr: false,
-		debug_shadow_map: false,
-		cam_ziggle: false,
-		light_ziggle: false,
+		show_hdr: true,
+		debug_shadow_map: true,
+		cam_ziggle: true,
+		light_ziggle: true,
 		audio_gain: 70.
 	}
 	
