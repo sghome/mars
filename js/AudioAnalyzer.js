@@ -187,8 +187,6 @@ AudioAnalyzer.prototype.debug = function(_canvas){
   _ctx.fillRect(_x,_canvas.height-_h,_w,_h);
   _x += _w;
   
-    // Add the autoplay functionality
-  _source.onended = function() {
-    document.getElementById("music").play();
+
   
 };
