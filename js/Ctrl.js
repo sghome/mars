@@ -1,6 +1,6 @@
 // need datgui lib & threejs lib
 
-var Ctrl = function(){
+var Ctrl = function(_blob, _light, _pbr, _audio){
 	this.params = {
 		show_hdr: true,
 		debug_shadow_map: false,
@@ -12,7 +12,10 @@ var Ctrl = function(){
 	// var _g_blob = new dat.GUI();
 	var _g_scene = new dat.GUI();
 
-
+	this.blob = _blob;
+	this.light = _light;
+	this.pbr = _pbr;
+	this.audio = _audio;
 
     // _g_scene.add(this.params, 'debug_shadow_map').onFinishChange( this.update_params.bind(this) );
 
