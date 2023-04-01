@@ -2,9 +2,6 @@
 
 var Ctrl = function(_blob, _light, _pbr, _audio){
 	
-          width: 350,
-          height: 9 * 32 - 1
-	
 	
 	this.params = {
 		show_hdr: true,
