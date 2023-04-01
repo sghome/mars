@@ -21,9 +21,8 @@ var Ctrl = function(_blob, _light, _pbr, _audio){
 
     // _g_scene.add(this.params, 'cam_ziggle');
     // _g_scene.add(this.params, 'light_ziggle');
-	    _g_scene.add(this.params, 'audio_gain', 0., 500.).onChange( this.update_params.bind(this) );
+    _g_scene.add(this.params, 'audio_gain', 0., 500.).onChange( this.update_params.bind(this) );
     _g_scene.add(this.audio, 'is_pulse');
-
     _g_scene.add(this.blob, 'show_hdr').onFinishChange( this.blob.toggle_cubemap.bind(this.blob) );
 
     // _g_blob.add(this.pbr, 'normal', 0., 5.);
@@ -44,4 +43,3 @@ Ctrl.prototype.update_params = function(){
 	this.audio.set_gain(this.params.audio_gain);
 	this.light.set_light_pos( new THREE.Vector3(_p.light_posx, _p.light_posy, _p.light_posz) );
 };
-
